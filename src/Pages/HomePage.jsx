@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import "./homePage.css";
 import { useNavigate } from "react-router-dom";
 import NewArrivalsCard from "../Components/NewArrivalscard";
 import BestSalescard from "../Components/BestSalescard.jsx";
+import "./HomePage.css";
 function HomePage() {
   const navigate = useNavigate();
   //
