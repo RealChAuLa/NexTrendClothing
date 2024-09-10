@@ -1,0 +1,87 @@
+.Latetst-drop-section {
+  width: 80%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 160px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.latest-drop-image-container {
+  width: 1000px;
+  height: 100%;
+  background-color: #49ccf5;
+  border-radius: 10px;
+}
+
+.latest-drop-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.latest-drop-description {
+  width: 100%;
+  height: 60%;
+  margin-left: 150px;
+  margin-top: 120px;
+  opacity: 0;
+  transform: translateX(-130px); 
+}
+
+.latest-drop-description h1 {
+  font-size: 74px;
+  font: bold;
+  font: italic;
+  font-family: "Quantico", sans-serif;
+  color: #49ccf5;
+  font-weight: 700;
+}
+
+.latest-drop-description h2 {
+  font-family: "Quantico", sans-serif;
+  font-size: 46px;
+  color: white;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-top: 5px;
+}
+
+.latest-drop-description button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 160px;
+  height: 50px;
+  font-family: "Quantico", sans-serif;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  margin-top: 23px;
+}
+
+.latest-drop-description button:hover {
+  background-color: #0e97c1;
+  color: #ffffff;
+}
+
+.latest-drop-description.scrolled {
+  animation: slideInX 0.7s ease-out forwards; 
+}
+
+@keyframes slideInX {
+  from {
+    transform: translateX(-130px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); 
+    opacity: 1;
+  }
+}
+

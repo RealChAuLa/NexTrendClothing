@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #111111;
+  outline: none;
+}
+
+element::-webkit-search-cancel-button {
+  display: none;
+}
+
+.message_box {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 25;
+}
+
+.message_box img {
+  width: 33px;
+  height: 33px;
+}
+
+.clothing-card-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-left: 65px;
+  margin-bottom: 60px;
+}
+
+.clothe-card {
+  height: 515px;
+  width: 320px;
+  overflow: hidden;
+  border-radius: 30px;
+  background-color: #343536;
+  margin-top: 15px;
+}
+
+.Clothe_image_container {
+  width: 320px;
+  height: 430px;
+  margin-top: -45px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 7px 10px rgba(25, 25, 25, 0.5),
+    0 10px 15px rgba(25, 25, 25, 0.5);
+}
+
+.Clothe_image_container img {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.Clothe_image_container img:hover {
+  transform: scale(1.1);
+}
+
+.add-to-favorites-button {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+  top: 370px;
+  left: 140px;
+  z-index: 35;
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: #49ccf5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-to-favorites-button:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+.add-to-favorites-button i {
+  font-size: 23px;
+}
+
+.favorite-button {
+  opacity: 0;
+  width: 45px;
+  height: 45px;
+  top: 380px;
+  left: 140px;
+  z-index: 35;
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: #49ccf5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.favorite-button:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+.favorite-button i {
+  font-size: 23px;
+}
+
+.clothe-card:hover .add-to-favorites-button {
+  opacity: 1;
+  animation: slideInY 0.4s ease-out forwards;
+}
+
+.clothe-card:hover .favorite-button {
+  opacity: 1;
+  animation: slideInY 0.4s ease-out forwards;
+}
+
+@keyframes slideInY {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sold-out-view-container {
+  position: relative;
+  top: 6px;
+  left: 180px;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  width: 80px;
+  height: 35px;
+  color: #49ccf5;
+  border-radius: 5px;
+  font-family: "Quantico", sans-serif;
+  text-transform: uppercase;
+}
+
+.clothing-card-container .clothing-details {
+  position: relative;
+  width: 300px;
+}
+
+.clothing-details {
+  margin-left: 19px;
+}
+
+.clothing-details .clothing-name {
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+  font-family: "Quantico", sans-serif;
+  color: #f6f2f2;
+  text-transform: uppercase;
+  margin-top: 7px;
+}
+
+.clothing-details .clothing-name:hover {
+  color: #49ccf5;
+}
+
+.clothing-details .clothing-price {
+  font-size: 16px;
+  font-family: "Quantico", sans-serif;
+  color: #c9c3c3d1;
+}
+
+.loader {
+  margin-left: 130px;
+  margin-bottom: 320px;
+  margin-top: 150px;
+  height: 3px;
+  width: 120px;
+  --c: no-repeat linear-gradient(#ffffff 0 0);
+  background: var(--c), var(--c), #111111;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
+}
+@keyframes l16 {
+  0% {
+    background-position: -150% 0, -150% 0;
+  }
+  66% {
+    background-position: 250% 0, -150% 0;
+  }
+  100% {
+    background-position: 250% 0, 250% 0;
+  }
+}

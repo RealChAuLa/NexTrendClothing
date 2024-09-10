@@ -1,0 +1,81 @@
+.header_name {
+  font-size: 40px;
+  font-weight: 500;
+  font: bold;
+  margin-left: 620px;
+  margin-top: 120px;
+  margin-bottom: 5px;
+  font-family: "Quantico", sans-serif;
+  color: #49ccf5;
+}
+
+.favClothe-delete-button {
+  opacity: 0;
+  width: 44px;
+  height: 42px;
+  top: 30px;
+  left: 259px;
+  z-index: 35;
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.favClothe-delete-button:hover {
+  background-color: black;
+}
+
+.favClothe-delete-button i {
+  font-size: 23px;
+  color: #49ccf5;
+}
+
+.clothe-card:hover .favClothe-delete-button {
+  opacity: 1;
+  animation: slideInY 0.4s ease-out forwards;
+}
+
+@keyframes slideInY {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.empty-wishlist-header {
+  margin-left: 600px;
+  margin-top: 120px;
+  margin-bottom: 4px;
+  font-size: 38px;
+  font: bold;
+  font-family: "Quantico", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.empty-wishlist-description {
+  margin-left: 339px;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.empty-wishlist img {
+  margin-left: 719px;
+  margin-bottom: 210px;
+}

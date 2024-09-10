@@ -1,0 +1,454 @@
+.loading {
+  width: 200px;
+  height: 2000px;
+  color: black;
+}
+.loding_gift {
+  width: 80px;
+  height: 80px;
+  margin-top: 300px;
+  margin-left: 750px;
+}
+
+.selection-container {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  width: 92%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.027);
+  padding: 20px;
+  gap: 10px;
+}
+
+.selection-container .Filter-button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(38, 36, 36);
+  color: #ffffff;
+  border: none;
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 50px;
+}
+
+.Filter-button i {
+  font-size: 12px;
+  margin-bottom: 7px;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+select {
+  width: 342px;
+  height: 44px;
+  font-family: "Quantico", sans-serif;
+  font-size: 18px;
+  background: none;
+  margin-right: 10px;
+  background-color: #2a2828;
+  color: #ffffffd3;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+  margin-top: 20px;
+}
+
+option {
+  border-radius: 0;
+  font-size: 15px;
+}
+
+.selection-style-container {
+  display: flex;
+  gap: 4px;
+  margin-right: 900px;
+}
+
+.style-option {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.selection-container .selected-tag {
+  width: 193px;
+  height: 40px;
+  background-color: rgb(38, 36, 36);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-left: 20px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 1px rgba(232, 230, 230, 0.1); /* Adds a soft shadow */
+}
+
+.selection-container .selected-tag h5 {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.selected-tag i {
+  font-size: 15px;
+  margin-top: 1px;
+  color: #ffffff;
+}
+
+.quick-view-container {
+  z-index: 55;
+  background-color: aquamarine;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a6d;
+  color: #ffffff;
+  /* display: flex; */
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-inner {
+  background: #111111;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 450px;
+  height: 580px;
+  animation: slidenypop 0.2s ease-out forwards;
+  left: 550px;
+  top: 90px;
+  opacity: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+  border: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+@keyframes slidenypop {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.popup-close-button {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #ffffffb1;
+}
+
+.popup-clothe-heder-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.popup-clothe-heder-container img {
+  width: 320px;
+  height: 250px;
+}
+
+.popup-clothe-heder-container h2 {
+  font-family: "Quantico", sans-serif;
+  font-size: 29px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.line-one-space {
+  opacity: 0.4;
+  color: #ffffff;
+}
+
+.popup-clothe-middle-container {
+  padding-top: 4px;
+  padding-left: 15px;
+}
+
+.popup-clothe-middle-container h6 {
+  font-family: "Quantico", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 20px;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.popup-clothe-middle-container h5 {
+  font-family: "Quantico", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+.shop-now-button-popup-section {
+  background-color: #49ccf5;
+  font-family: "Quantico", sans-serif;
+  border: none;
+  color: #ffffff;
+  width: 350px;
+  font-size: 20px;
+  height: 50px;
+  margin-left: 30px;
+  border-radius: 2px;
+  margin-top: 50px;
+}
+
+.shop-now-button-popup-section:hover {
+  background-color: #49ccf5;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.add-to-favorites-button-super {
+  opacity: 0;
+  width: 40px;
+  height: 45px;
+  top: 370px;
+  left: 90px;
+  z-index: 35;
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: #49ccf5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-to-favorites-button-super:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+.add-to-favorites-button-super i {
+  font-size: 23px;
+}
+
+.favorite-button-super {
+  opacity: 0;
+  width: 40px;
+  height: 45px;
+  top: 370px;
+  left: 90px;
+  z-index: 35;
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: #49ccf5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.favorite-button-super i {
+  font-size: 23px;
+}
+
+.clothe-card:hover .add-to-favorites-button-super {
+  opacity: 1;
+  animation: slideInY 0.6s ease-out forwards;
+}
+
+.clothe-card:hover .favorite-button-super {
+  animation-delay: 0.2s;
+  opacity: 1;
+  animation: slideInY 0.4s ease-out forwards;
+}
+
+.clothe-card:hover .quick-view-button {
+  opacity: 1;
+  animation: slideInY 0.4s ease-out forwards;
+}
+
+.clothe-card:hover .view-container-name-three {
+  opacity: 1;
+  animation: slideInY 0.7s ease-out forwards;
+}
+
+@keyframes slideInY {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sold-out-view-container-super {
+  position: relative;
+  top: 7px;
+  left: 100px;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  width: 80px;
+  height: 35px;
+  color: #49ccf5;
+  border-radius: 5px;
+  font-family: "Quantico", sans-serif;
+  text-transform: uppercase;
+}
+.quick-view-button {
+  opacity: 0;
+  width: 40px;
+  height: 45px;
+  top: 370px;
+  left: 80px;
+  z-index: 35;
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: #49ccf5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quick-view-button i {
+  font-size: 23px;
+}
+
+.view-container-name-three {
+  opacity: 0;
+  width: 40px;
+  height: 45px;
+  top: 370px;
+  left: 100px;
+  z-index: 35;
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: #49ccf5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-container-name-three i {
+  font-size: 23px;
+}
+
+.Fitler-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a6d;
+  color: #ffffff;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.Filter-section {
+  background-color: #111111;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 100%;
+  animation: slidenypop 0.2s ease-out forwards;
+  border-right: 1px solid rgba(255, 255, 255, 0.055);
+  box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow to the right */
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.Filter-header-section {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  background-color: #5553530d;
+}
+
+.Filter-header-section h2 {
+  font-size: 33px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+.Filter-header-section i {
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.Filter-close-button {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  font-weight: 300;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.Filter-middle-container {
+  padding: 20px;
+}
+
+.Filter-middle-container H3 {
+  font-family: "Quantico", sans-serif;
+  font-size: 37px;
+  color: #ffffff;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.filter-midlle-sections h1 {
+  font-family: "Quantico", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.filter-midlle-sections hr {
+  margin-top: 24px;
+  background-color: #272727;
+  margin-bottom: 30px;
+}
+
+.filter-middle-row-header {
+  display: flex;
+  gap: 200px;
+}
+
+.filter-midlle-sections i {
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 10px;
+  right: 20px;
+}

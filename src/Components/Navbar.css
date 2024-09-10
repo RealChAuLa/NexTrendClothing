@@ -1,0 +1,85 @@
+.nav {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 12vh;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  z-index: 102;
+  background-color: #111111;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-right: 85px;
+  letter-spacing: 2px;
+  font-family: "Quantico", sans-serif;
+  color: #49ccf5;
+}
+
+.nav-features {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-right: 90px;
+  margin-left: 110px;
+}
+
+.fav_section {
+  margin-right: 25px;
+  display: flex;
+  gap: 30px;
+  margin-left: 300px;
+}
+
+.fav_section i {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.nav-features a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.nav-features li:not(.search):hover {
+  transform: translateY(-4px);
+}
+
+.nav-features li {
+  transition: transform 0.4s ease-in-out;
+}
+
+.loginBtn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #5872f2;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.details_containerfavcount {
+  width: 100px;
+  height: 40px;
+}
+
+.fav_section .circle_count {
+  position: absolute;
+}
+
+.favcount_number {
+  margin-left: 40px;
+}
