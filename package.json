@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
     "start": "npx serve -s dist"
   },
   "dependencies": {
@@ -35,7 +35,6 @@
     "vite": "^5.4.1"
   },
   "engines": {
-  "node": ">=14.0.0"
+    "node": ">=14.0.0"
   }
-
 }
