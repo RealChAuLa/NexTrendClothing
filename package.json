@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "npx serve -s dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -32,5 +33,8 @@
     "globals": "^15.9.0",
     "react-refresh": "^0.14.2",
     "vite": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
