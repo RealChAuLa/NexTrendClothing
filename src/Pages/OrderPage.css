@@ -1,225 +1,255 @@
 /* Base styles */
-
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 .order-page-container {
-    margin-top: 12vh;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #181818;
+  margin-top: 12vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #181818;
 }
 
 .clothe-details h1 {
-    font-size: 2rem;
-    color: #ffffff;
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 .clothe-images img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .clothe-images {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 350px;
 }
 
 /* Slider */
 .slider {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #222222;
-    padding: 20px;
-    border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* padding: 20px; */
+  border-radius: 10px;
+  background-color: rebeccapurple;
 }
 
 .slider-images {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
 .slider-image {
-    display: none;
-    max-width: 100%;
-    border-radius: 5px;
+  display: none;
+  /* max-width: 100%; */
+  height: 800px;
+  width: 700px;
+  object-fit: cover;
 }
 
 .slider-image.active {
-    display: block;
+  display: block;
 }
 
 .slider-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
 }
 
 .slider-nav.prev {
-    left: -40px;
+  left: -40px;
 }
 
 .slider-nav.next {
-    right: -40px;
+  right: -40px;
 }
 
 /* Thumbnails */
 .thumbnail-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: 20px;
 }
 
 .thumbnail {
-    width: 70px;
-    height: auto;
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 5px;
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
 }
 
 .thumbnail.active {
-    border: 2px solid #ffffff;
+  border: 2px solid #ffffff;
 }
 
 /* Product Info */
 .product-wrapper {
-    max-width: 600px;
-    margin-left: 2rem;
+  width: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.148);
+  margin-left: 2rem;
+}
+
+.product-details {
+  padding: 10px;
 }
 
 .product-details h1 {
-    color: #ffffff;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 37px;
+  margin-bottom: 1rem;
+  font-family: "Quantico", sans-serif;
+  text-transform: uppercase;
 }
 
 .product-details .price {
-    color: #ffffff;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  font-size: 16px;
+  font-family: "Quantico", sans-serif;
+  color: #c9c3c3d1;
 }
 
 .product-details .quantity-wrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 17px;
 }
 
 .product-details .quantity-wrapper button {
-    background-color: #333;
-    color: #ffffff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .product-details .quantity-wrapper input {
-    width: 50px;
-    text-align: center;
-    margin: 0 10px;
-    background-color: #222;
-    color: #ffffff;
-    border: none;
+  width: 50px;
+  height: 16px;
+  text-align: center;
+  margin: 0 10px;
+  background-color: #222;
+  color: #ffffff;
+  border: none;
+  margin-top: 10px;
 }
 
 .buy-now {
-    background-color: #133c34;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+  background-color: #242424;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .add-to-cart:hover {
-    background-color: #ff4500;
+  background-color: #ff4500;
 }
 
 .product-info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-    background-color: #222222;
-    padding: 20px;
-    border-radius: 10px;
-    color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  background-color: #222222;
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Quantico", sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 
 /* Icons */
 .product-info .info-icon {
-    margin-right: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+  color: #ffffff;
 }
 
 .checkout-options img {
-    filter: invert(1); /* Ensure logos are visible on dark background */
+  filter: invert(1);
 }
 
 /* Loading screen styles */
 .loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75); /* Slightly transparent dark background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Make sure it's on top */
-    color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.75
+  ); /* Slightly transparent dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure it's on top */
+  color: #fff;
 }
 
 .spinner {
-    border: 5px solid rgba(255, 255, 255, 0.3);
-    border-top: 5px solid #fff;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top: 5px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loading-screen p {
-    margin-top: 20px;
-    font-size: 1.2em;
+  margin-top: 20px;
+  font-size: 1.2em;
 }
 
-.pay-icons{
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    font: 14px / 22.4px "Albert Sans", sans-serif;
-    letter-spacing: normal;
-    cursor: auto;
-    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+.pay-icons {
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  font: 14px / 22.4px "Albert Sans", sans-serif;
+  letter-spacing: normal;
+  cursor: auto;
+  background: none 0% 0% / auto repeat scroll padding-box border-box
+    rgb(255, 255, 255);
 }
 .P-0 {
-    box-sizing: border-box;
-    margin: 0px;
-    font: 600 14px "Albert Sans", sans-serif;
-    color: rgb(0, 0, 0);
-    letter-spacing: normal;
-    cursor: auto;
-    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
-
+  box-sizing: border-box;
+  margin: 0px;
+  font: 600 14px "Albert Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  letter-spacing: normal;
+  cursor: auto;
+  background: none 0% 0% / auto repeat scroll padding-box border-box
+    rgb(255, 255, 255);
 }

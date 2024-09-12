@@ -28,7 +28,6 @@ const Navbar = () => {
     }
   };
 
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -65,10 +64,10 @@ const Navbar = () => {
   return (
     <div className="">
       <nav className="nav">
-        <span className="logo">NEXTrend</span>
+        <span className="logo">NEXTREND</span>
         <ul className="nav-features">
           <li className="activeTab">
-            <a href="" onClick={() => handleNavigation("/")}>
+            <a href="" onClick={() => navigate("/")}>
               HOME
             </a>
           </li>
@@ -82,12 +81,11 @@ const Navbar = () => {
               WISHLIST
             </a>
           </li>
-
         </ul>
 
         <div className="fav_section">
           <div
-              style={{
+            style={{
               position: "absolute",
               marginLeft: "12px",
               alignItems: "center",

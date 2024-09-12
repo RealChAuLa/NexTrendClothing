@@ -49,9 +49,6 @@ function HomePage() {
 
       <div className="header-section">
         <h1 className="head-section-title">Essential Gear</h1>
-        <h1 className="head-section-title-second">for Every Man</h1>
-
-
         <button
           className="header-section-shopNow-button"
           onClick={GotoClothmenu}
@@ -59,7 +56,7 @@ function HomePage() {
           SHOP NOW
         </button>
         <img
-          // src="./src/images/LVU08635.webp"
+          src="./src/images/banner-2.webp"
           className="header-section-banner"
         />
       </div>

@@ -6,7 +6,9 @@ import { db, storage } from "../Service/FirebaseConnect";
 import "./Newarivalscard.css";
 
 const NewArrivalsCard = () => {
-  const USERNAME = "sasii";
+  // const USERNAME = "sasii";
+  const USERNAME = sessionStorage.getItem("username");
+
   const [clothes, setClothes] = useState([]);
   const [images, setImages] = useState({});
   const [loading, setLoading] = useState(true);
