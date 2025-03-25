@@ -1,6 +1,3 @@
 ## Demo Video
 
-<video width="600" controls>
-  <source src="https://github.com/RealChAuLa/NexTrendClothing/blob/master/src/assets/Demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/8d856572-4ad7-4866-b2f2-4155f0965237
